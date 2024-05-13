@@ -15,6 +15,7 @@ Lewis aims to understand how his business has performed over time to make inform
 **Action:**
 I undertook an analysis of Lewis's office supplies business, aiming to provide insights into its performance over time. 
 To conduct this analysis, I extracted relevant data from the database, performed data cleaning procedures, and executed a series of analytical tasks to derive meaningful conclusions.
+
 **1. Revenue Generation by Product Category:**
 
    - Applied a 10% discount for products > $100 and a 5% discount for products between $50 and $100.
