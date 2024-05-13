@@ -1,5 +1,3 @@
---QUE 1
-
 --How much revenue did we generate from each product category, 
 --after considering a 10% discount for products that cost more than $100, 
 --and a 5% discount for products that cost between $50 and $100?
@@ -21,8 +19,6 @@ join products ON products."ProductID" = orders."ProductID"
 group by "ProductCategory";
 
 
---QUE 2
-
 --What is the total revenue generated, 
 --considering that products with a NULL price should be treated as having a default price of $10?
 
@@ -35,17 +31,12 @@ from orders
 join products on orders."ProductID" = products."ProductID";
 
 
-
---QUE 3
-
 --How many orders were placed in the year 2015?
 
 SELECT count(distinct "OrderID")
 from orders
 where cast("OrderDate" as date) between '2015-01-01' and '2015-12-31';
 
-
---QUE 4
 
 --What is the name and category of the top-selling product (in terms of quantity) in the year 2015?
 
@@ -67,7 +58,6 @@ JOIN (
     ORDER BY SUM("Quantity") DESC
     LIMIT 1
 ) AS top_product ON p."ProductID" = top_product."ProductID";
-
 
 
 --What is the average price of products that have never been ordered?
